@@ -21,7 +21,9 @@ void loop() {
     rec_chk = true;
   }
   if (rec_data == 'A') { 
-    RGB_Color(RGB_LED.Color(255, 0, 0), 10);
+    RGB_Color(RGB_LED.Color(random(256),random(256),random(256)), 10);
+    delay(1000);
+    //RGB_Color(RGB_LED.Color(11, 255, 240), 10);
   }
   if (rec_data == 'B') { 
     RGB_Color(RGB_LED.Color(0, 0, 0), 10);
